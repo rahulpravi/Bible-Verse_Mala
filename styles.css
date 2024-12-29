@@ -1,0 +1,130 @@
+body {
+    font-family: 'Times New Roman';
+    background-image: url('dvbg.jpg'); /* Ensure you have a nature-themed background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 22px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: bold;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: rgb(231,162,32);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.close-button {
+    color: #191919;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+/* 3D Animated Button */
+.animated-button {
+    background: linear-gradient(145deg, #f39c12, #d35400);
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+
+/* Button Hover Effects */
+.animated-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Hand Animation */
+.hand-animation {
+    margin-top: 20px;
+    animation: bounce 1.5s infinite;
+}
+
+.hand {
+    font-size: 30px;
+    color: #f8c677;
+    display: inline-block;
+    text-shadow: 0 0 5px #000000, 0 0 7px #f8c66f;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

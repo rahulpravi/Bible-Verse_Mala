@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Bible Verse</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include BibleLink Plugin -->
+    <script src="https://bible-link.globalrize.org/biblelink.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <button class="animated-button" id="verseButton">Get a Random Bible Verse</button>
+        <div class="hand-animation">
+            <span class="hand">👆</span>
+        </div>
+    </div>
+    <!-- Modal Structure -->
+    <div id="verseModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button bible-link">&times;</span>
+            <p id="bibleVerse"></p>
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
